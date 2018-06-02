@@ -62,7 +62,11 @@ endif()
 
 # define the list of search paths for headers and libraries
 # set(SFML_ROOT /Users/uh/Documents/SFML)
-set(SFML_ROOT ~/Documents/SFML)
+if (NOT WIN32)
+    set(SFML_ROOT ~/Documents/SFML)
+else()
+    set(SFML_ROOT C:/SFML)
+endif()
 set(FIND_SFML_PATHS
     ${SFML_ROOT}
     $ENV{SFML_ROOT}
