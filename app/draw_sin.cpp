@@ -18,17 +18,10 @@ int main() {
     unsigned canvas_width = window.getSize().x;
     unsigned canvas_height = window.getSize().y-100;
 
-    const double step = 0.1;
-    int index = 0;
+    const double step = 0.01;
     for (double x = 0.0; x < canvas_width*0.2; x = x + step) {
         double y = sin(x);
-        if (index % 3 == 0)
-            m_points.append(sf::Vertex(sf::Vector2f(x*20,canvas_height/2-y*80), sf::Color::Red));
-        else if (index % 3 == 1)
-            m_points.append(sf::Vertex(sf::Vector2f(x*20,canvas_height/2-y*80), sf::Color::Green));
-        else
-            m_points.append(sf::Vertex(sf::Vector2f(x*20,canvas_height/2-y*80), sf::Color::Blue));
-        index++;
+        m_points.append(sf::Vertex(sf::Vector2f(x*20,canvas_height/2-y*80), sf::Color::Red));
     }
 
     while(window.isOpen()){
