@@ -1,11 +1,25 @@
 cmake_minimum_required(VERSION 3.10)
-project(Loops)
+project(FilesLoopsSFML)
 
 message("CMAKE_SYSTEM_NAME::${CMAKE_SYSTEM_NAME}")
 
 set(CMAKE_CXX_STANDARD 11)
-set(SOURCE_FILES app/sin.cpp app/cos.cpp app/exp.cpp app/draw_map.cpp)
+set(SOURCE_FILES app/Pr5-15.cpp app/Pr5-16.cpp app/Pr5-17.cpp
+        app/Pr5-18.cpp app/Pr5-19.cpp app/Pr5-20.cpp
+        app/Pr5-21.cpp app/Pr5-22.cpp app/Pr5-23.cpp
+        app/Pr5-24.cpp
+        app/sin.cpp app/cos.cpp app/exp.cpp app/draw_map.cpp)
 
+add_executable(Pr5-15.exe app/Pr5-15.cpp)
+add_executable(Pr5-16.exe app/Pr5-16.cpp)
+add_executable(Pr5-17.exe app/Pr5-17.cpp)
+add_executable(Pr5-18.exe app/Pr5-18.cpp)
+add_executable(Pr5-19.exe app/Pr5-19.cpp)
+add_executable(Pr5-20.exe app/Pr5-20.cpp)
+add_executable(Pr5-21.exe app/Pr5-21.cpp)
+add_executable(Pr5-22.exe app/Pr5-22.cpp)
+add_executable(Pr5-23.exe app/Pr5-23.cpp)
+add_executable(Pr5-24.exe app/Pr5-24.cpp)
 add_executable(sin.exe app/sin.cpp)
 add_executable(cos.exe app/cos.cpp)
 add_executable(exp.exe app/exp.cpp)
