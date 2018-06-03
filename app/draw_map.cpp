@@ -41,7 +41,7 @@ int main() {
     // draw Canvas to the window!
     sf::RenderWindow window(sf::VideoMode(w,h,32), selection? "Germany Map" : "US Map");
     sf::Texture texture;
-    texture.loadFromImage(us_map);
+    texture.loadFromImage(_map);
     sf::Sprite sprite;
     sprite.setTexture(texture, true);
 
