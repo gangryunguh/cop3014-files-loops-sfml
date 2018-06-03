@@ -25,15 +25,15 @@ int main() {
     inputFile >> w >> h;    // get dimension
 
     // create Canvas and put Red marker to each city read from inputFile
-    sf::Image us_map;
-    us_map.create(w,h,sf::Color::Black);
+    sf::Image _map;
+    _map.create(w,h,sf::Color::Black);
     double dx,dy;
     while (inputFile >> dx >> dy) {
         unsigned x = static_cast<unsigned>(dx);
         unsigned y = static_cast<unsigned>(dy);
-        sf::Color color = us_map.getPixel(x,h-y);
+        sf::Color color = _map.getPixel(x,h-y);
         color = sf::Color::Red;
-        us_map.setPixel(x,h-y,color);
+        _map.setPixel(x,h-y,color);
     }
     // close inputFile when you done
     inputFile.close();
