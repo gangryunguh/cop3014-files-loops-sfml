@@ -66,6 +66,7 @@ if (WIN32)
 else()
     set(SFML_ROOT ~/Documents/SFML)
 endif()
+
 set(FIND_SFML_PATHS
     ${SFML_ROOT}
     $ENV{SFML_ROOT}

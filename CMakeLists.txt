@@ -12,7 +12,10 @@ add_executable(exp.exe app/exp.cpp)
 add_executable(draw_sin.exe app/draw_sin.cpp)
 add_executable(draw_map.exe app/draw_map.cpp)
 
+if (WIN32)
 set(SFML_STATIC_LIBRARIES TRUE)
+endif()
+
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 find_package(SFML REQUIRED COMPONENTS audio graphics window system)
 
@@ -25,5 +28,5 @@ if (SFML_FOUND)
         target_link_libraries(draw_sin.exe ${SFML_LIBRARIES})
         target_link_libraries(draw_map.exe ${SFML_LIBRARIES})
     endif()
-endif ()
+endif()
 
