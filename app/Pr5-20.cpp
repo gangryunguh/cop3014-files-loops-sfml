@@ -9,7 +9,7 @@ int main()
    int value1, value2, value3, sum;
 
    // Open the file.
-   inFile.open("NumericData.txt");
+   inFile.open("resources/NumericData.txt");
 
    // Read the three numbers from the file.
    inFile >> value1;
