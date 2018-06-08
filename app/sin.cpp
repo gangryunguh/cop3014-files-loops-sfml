@@ -37,6 +37,6 @@ int main()
    }
 
    cout << fixed << showpoint << setprecision(2);
-   cout << "sine(" << x << ") = " << sum << endl;
+   cout << "sin(" << x << ") = " << sum << endl;
    return 0;
 }
