@@ -28,8 +28,10 @@ int main()
     double term = 1.0;
     double sum = 1.0;
     for (int i=1; term != 0.0; i++) {
-        term = term * (x/i);
-        sum += term;
+
+        // implement the formula given in line 6
+
+
     }
     cout << "my exp( " << x << " ) = " << sum << endl;
 

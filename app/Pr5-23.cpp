@@ -11,23 +11,11 @@ int main()
    // Open the file.
    inputFile.open("BadListOfNumbers.txt");
 
-   // If the file successfully opened, process it.
-   if (inputFile)
-   {
-      // Read the numbers from the file and
-      // display them.
-      while (inputFile >> number)
-      {
-         cout << number << endl;
-      }
+   // If the file successfully opened,
+   //    print all the numbers in the file
+   // otherwise, display an error message.
 
-      // Close the file.
-      inputFile.close();
-   }
-   else
-   {
-      // Display an error message.
-      cout << "Error opening the file.\n";
-   }
+
+
    return 0;
 }

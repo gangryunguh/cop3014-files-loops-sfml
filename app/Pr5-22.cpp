@@ -8,17 +8,15 @@ int main()
    ifstream inputFile;
    int number;
 
-   // Open the file.
-   inputFile.open("ListOfNumbers.txt");
+   // Open the file named "resources/ListOfNumbers.txt" using inputFile ifstream object
+
 
    // Read the numbers from the file and
    // display them.
-   while (inputFile >> number)
-   {
-      cout << number << endl;
-   }
+
+
 
    // Close the file.
-   inputFile.close();
+
    return 0;
 }

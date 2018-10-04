@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-   ofstream outputFile;  // File stream object
+
    int numberOfDays;     // Number of days of sales
    double sales;         // Sales amount for a day
    
@@ -13,8 +13,8 @@ int main()
    cout << "For how many days do you have sales? ";
    cin >> numberOfDays;
 
-   // Open a file named Sales.txt.
-   outputFile.open("Sales.txt");
+   // Open a file named "Sales.txt" using outputFile ofstream object.
+
 
    // Get the sales for each day and write it
    // to the file.
@@ -25,12 +25,12 @@ int main()
            << count << ": ";
       cin >> sales;
       
-      // Write the sales to the file.
-      outputFile << sales << endl;
+      // Write the sales to the file which is named as "Sales.txt"
+
    }
 
    // Close the file.
-   outputFile.close();
+
    cout << "Data written to Sales.txt\n";
    return 0;
 }

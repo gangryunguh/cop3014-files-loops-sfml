@@ -24,16 +24,15 @@ int main()
 
    x = std::fmod(x,2*pi);  // in C++ % is defined only for int data type
 
-   // compute the Talyor series approximation
+   // compute the Taylor series approximation
    double term = 1.0;  // ith term = x^i / i!
    double sum = 0.0;   // sum of first i terms in taylor series
 
    for (int i = 1; term != 0.0; i++) {
-      term = term * (x / i);
-      if (i % 4 == 1)
-         sum += term;
-      else if (i % 4 == 3)
-         sum -= term;
+
+      // implement the sin(x) formula in line 6
+
+
    }
 
    cout << fixed << showpoint << setprecision(2);

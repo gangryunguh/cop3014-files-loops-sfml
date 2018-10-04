@@ -18,11 +18,10 @@ int main()
    // Determine the charges.
    do
    {
-      if ((dvdCount % 3) == 0)
-      {
-         cout << "DVD #" << dvdCount << " is free!\n";
-         continue;  // Immediately start the next iteration
-      }
+      // make every third dvd rental be free
+
+
+
       cout << "Is DVD #" << dvdCount;
       cout << " a current release? (Y/N) ";
       cin >> current;

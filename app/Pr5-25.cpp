@@ -20,8 +20,9 @@ int main()
       cout << "\nEnter Q to quit or any other key ";
       cout << "to continue. ";
       cin >> choice;
-      if (choice == 'Q' || choice == 'q')
-         break;
+
+      // if the choice is either 'Q' or 'q', then exit the loop iteration
+
    }
    return 0;
 }

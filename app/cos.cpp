@@ -26,16 +26,14 @@ int main()
 
     x = std::fmod(x,2*pi);
 
-    // compute the Talyor series approximation
+    // compute the Taylor series approximation
     double term = 1.0;  // ith term = x^i / i!
     double sum = 1.0;   // sum of first i terms in taylor series
 
     for (int i = 1; term != 0.0; i++) {
-        term = term * (x / i);
-        if (i % 4 == 0)
-            sum += term;
-        else if (i % 4 == 2)
-            sum -= term;
+
+        // implement the formula given in line 6
+
     }
 
     cout << fixed << showpoint << setprecision(2);

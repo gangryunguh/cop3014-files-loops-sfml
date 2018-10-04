@@ -1,6 +1,6 @@
 // This program reads numbers from a file.
 #include <iostream>
-#include <fstream>
+
 using namespace std;
 
 int main()
@@ -8,16 +8,13 @@ int main()
    ifstream inFile;
    int value1, value2, value3, sum;
 
-   // Open the file.
-   inFile.open("resources/NumericData.txt");
+   // Open the file "resources/NumericData.txt" using inFile ifstream object
 
-   // Read the three numbers from the file.
-   inFile >> value1;
-   inFile >> value2;
-   inFile >> value3;
+
+   // Read the three numbers from the file into value1, value2, and value3
 
    // Close the file.
-   inFile.close();
+
 
    // Calculate the sum of the numbers.
    sum = value1 + value2 + value3;
@@ -29,5 +26,6 @@ int main()
 
    // Display the sum of the numbers.
    cout << "Their sum is: " << sum << endl;
+
    return 0;
 } 

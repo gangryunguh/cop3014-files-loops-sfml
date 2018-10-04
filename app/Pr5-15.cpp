@@ -1,6 +1,6 @@
 // This program writes data to a file.
 #include <iostream>
-#include <fstream>
+
 using namespace std;
 
 int main()

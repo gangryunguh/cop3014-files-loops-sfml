@@ -1,15 +1,17 @@
 // This program writes user input to a file.
 #include<iostream>
-#include<fstream>
+
 using namespace std;
 
 int main()
 {
-	ofstream outputFile;
+	// define outputFile ofstream object
+
+
 	int number1, number2, number3;
 
-	// Open an output file.
-	outputFile.open("Numbers.txt");
+	// Open an output file "Numbers.txt" using outputFile ofstream
+
 
 	// Get three numbers from the user.
 	cout << "Enter a number: ";
@@ -19,14 +21,17 @@ int main()
 	cout << "One more time. Enter a number: ";
 	cin >> number3;
 
-	// Write the numbers to the file.
-	outputFile << number1 << endl;
-	outputFile << number2 << endl;
-	outputFile << number3 << endl;
+
+	// Write the numbers to the outputFile in a new line
+
+
+
 	cout << "The numbers were saved to a file.\n";
 
 	// Close the file.
-	outputFile.close();
+
+
+
 	cout << "Done.\n";
 	return 0;
 }
