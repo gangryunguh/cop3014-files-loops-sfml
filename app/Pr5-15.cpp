@@ -5,19 +5,24 @@ using namespace std;
 
 int main()
 {
-   ofstream outputFile;
-   outputFile.open("demofile.txt");
+   // define a outputFile ofstream object
+
+
+   // using outputFile object, open "demofile.txt"
+
+
 
    cout << "Now writing data to the file.\n";
 
-   // Write four names to the file.
-   outputFile << "Bach\n";
-   outputFile << "Beethoven\n";
-   outputFile << "Mozart\n";
-   outputFile << "Schubert\n";
+   // Write four names, Bach, Beethoven, Mozart, and Schubert to different lines in
+   // outputFile object
+
 
    // Close the file
-   outputFile.close();
+
+
+
+
    cout << "Done.\n";
    return 0;
 }
